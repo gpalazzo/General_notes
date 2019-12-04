@@ -6,7 +6,7 @@ This repository aims to summarize general notes about bash commands and other co
 ## SSH
 - `Standard TCP SSH port: 22`
 
-### SSH Keys
+#### SSH Keys
 ##### Generating SSH key
   - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 ##### "Making" SSH visible to bash
