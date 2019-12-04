@@ -4,4 +4,4 @@ This repository aims to summarize general notes about bash commands and other co
 **Please do feel free to suggest both changes in the snippet/description, or adding new snippets/descriptions.**
 
 ## SSH
-`Standard TCP SSH port: 22`
+- `Standard TCP SSH port: 22`
