@@ -13,3 +13,9 @@ This repository aims to summarize general notes about bash commands and other co
   - `ssh-agent bash`
 ##### Adding private key to identity file (it allows cloning the repository having the SSH public key)**
   - `ssh-add file_with_private_key`
+
+## Package installation
+#### All statements below refer to the same thing, even though `pip` and `conda` might have differences in terms of packages
+- `pip install -r path_to_requirements.txt` or
+- `conda install --yes --file requirements.txt` or
+- `while read requirement; do conda install --yes $requirement; done < requirements.txt`
