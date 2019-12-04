@@ -8,8 +8,8 @@ This repository aims to summarize general notes about bash commands and other co
 
 ### SSH Keys
 **Generating SSH key**
-- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+  - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 **"Making" SSH visible to bash**
-- `ssh-agent bash`
+  - `ssh-agent bash`
 **Adding private key to identity file (it allows cloning the repository having the SSH public key)**
-- `ssh-add file_with_private_key`
+  - `ssh-add file_with_private_key`
