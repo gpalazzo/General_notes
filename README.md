@@ -20,6 +20,7 @@ This repository aims to summarize general notes about bash commands and other co
 - `conda install --yes --file requirements.txt` or
 - `while read requirement; do conda install --yes $requirement; done < requirements.txt`
 
+## Working with paths
 #### Find file path
 Replace "pattern" with a filename or matching expression, such as "*.txt". (Leave the double quotes in.)
 - `find . -name "pattern" -print`
