@@ -1,5 +1,5 @@
 # General_notes
-This repository aims to summarize general notes about bash commands and other configuration snippets. It's suppose to be a source for finding useful stuff in a quick and centralized way.
+This repository aims to summarize general notes about bash commands and other configuration snippets. It's suppose to be a source for finding useful stuff in a quick and centralized way. Reminder: it's only commands for unix system (I can't guarantee it works in Windows).
 
 **Please do feel free to suggest both changes in the snippet/description, or adding new snippets/descriptions.**
 
@@ -19,3 +19,7 @@ This repository aims to summarize general notes about bash commands and other co
 - `pip install -r path_to_requirements.txt` or
 - `conda install --yes --file requirements.txt` or
 - `while read requirement; do conda install --yes $requirement; done < requirements.txt`
+
+#### Find file path
+Replace "pattern" with a filename or matching expression, such as "*.txt". (Leave the double quotes in.)
+- `find . -name "pattern" -print`
