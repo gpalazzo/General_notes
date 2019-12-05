@@ -22,5 +22,5 @@ This repository aims to summarize general notes about bash commands and other co
 
 ## Working with paths
 #### Find file path
-Replace "pattern" with a filename or matching expression, such as "*.txt". (Leave the double quotes in.)
+Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave the double quotes in).
 - `find . -name "pattern" -print`
