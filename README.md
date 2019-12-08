@@ -8,7 +8,7 @@ This repository aims to summarize general notes about bash commands and other co
 
 #### SSH Keys
 ##### Generating SSH key
-  - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+  - move to `~/.ssh/` and then `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 ##### "Making" SSH visible to bash
   - `ssh-agent bash`
 ##### Adding private key to identity file (it allows cloning the repository having the SSH public key)**
@@ -24,3 +24,16 @@ This repository aims to summarize general notes about bash commands and other co
 #### Find file path
 Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave the double quotes in).
 - `find . -name "pattern" -print`
+
+## GitHub
+##### Track file history (logs) in a repository
+- `git log --all --full-history -- <path_to_file>` (without <>)
+
+##### Steps to clear history of github repository
+1. move to the repository you want to perform the action
+2. `rm -rf .git`
+3. `git init`
+4. `git add .`
+5. `git commit -m "commit_message"` (substitute commit_message for the message you want)
+6. `git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git` (note you would need ssh permission for this action)
+7. `git push -u --force origin master`
