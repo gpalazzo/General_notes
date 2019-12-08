@@ -35,5 +35,5 @@ Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave
 3. `git init`
 4. `git add .`
 5. `git commit -m "commit_message"` (substitute commit_message for the message you want)
-6. `git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git` (note you would need ssh permission for this action)
+6. `git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git` (note you would need ssh permission for this action, i.e., you need to have a public key in your ssh keys in github profile)
 7. `git push -u --force origin master`
