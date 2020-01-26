@@ -33,6 +33,10 @@ Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave
 #### Find file path from the root directory
 - `find ~ -name "pattern" -print`
 
+## Anaconda3
+How to solve: `-bash: conda: command not found`?
+- `export PATH=~/anaconda3/bin:$PATH`
+
 ## GitHub
 ##### Track file history (logs) in a repository
 - `git log --all --full-history -- <path_to_file>` (without <>)
