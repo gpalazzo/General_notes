@@ -5,7 +5,7 @@ This repository aims to summarize general notes about bash commands and other co
 
 ## File's permission
 #### How do I see file's permission?
-##### `stat -f %A {file_name}` (without brackets {})
+- `stat -f %A {file_name}` (without brackets {})
 
 ## SSH
 - `Standard TCP SSH port: 22`
