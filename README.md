@@ -34,7 +34,7 @@ Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave
 - `find ~ -name "pattern" -print`
 
 ## Anaconda3
-How to solve: `-bash: conda: command not found`?
+How to solve: `-bash: conda: command not found` when trying to use any `conda` related command?
 - `export PATH=~/anaconda3/bin:$PATH`
 
 ## GitHub
