@@ -3,12 +3,16 @@ This repository aims to summarize general notes about bash commands and other co
 
 **Please do feel free to suggest both changes in the snippet/description, or adding new snippets/descriptions.**
 
+## File's permission
+#### How do I see file's permission?
+##### `stat -f %A {file_name}` (without brackets {})
+
 ## SSH
 - `Standard TCP SSH port: 22`
 
 #### SSH Keys
 ##### File's permission
-  - if you have a `{file_name}.pem` file holding your private key for a SSH, you should do `chmod 400 {file_name}.pem` in order to allow the root remote to read it.
+  - if you have a `{file_name}.pem` file holding your private key for a SSH, you should do `chmod 400 {file_name}.pem` in order to allow the root remote to read it. (without brackets {})
 ##### One possible way of generating SSH key
   - move to `~/.ssh/` and then `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 ##### "Making" SSH visible to bash (in case you changed the default id_rsa name, if you create another bash session, i.e., close and open another bash, you will need to perform both steps that follows):
@@ -23,9 +27,11 @@ This repository aims to summarize general notes about bash commands and other co
 - `while read requirement; do conda install --yes $requirement; done < requirements.txt`
 
 ## Working with paths
-#### Find file path
+#### Find file path from the current directory
 Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave the double quotes in).
 - `find . -name "pattern" -print`
+#### Find file path from the root directory
+- `find ~ -name "pattern" -print`
 
 ## GitHub
 ##### Track file history (logs) in a repository
