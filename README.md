@@ -37,6 +37,11 @@ Replace "pattern" with a filename or matching expression, such as "*.txt" (Leave
 How to solve: `-bash: conda: command not found` when trying to use any `conda` related command?
 - `export PATH=~/anaconda3/bin:$PATH`
 
+## Python related section
+#### ModuleNotFoundError
+It could be generated because your environment variable `PYTHONPATH` is not visible with all packages and modules you have (specially if you are setting up a virtualenv in a new machine and trying to run a code for the first time). For this, substitute `{path_to_your_project}` without brackets {}:
+- `export PYTHONPATH={path_to_your_project}:$PYTHONPATH`
+
 ## GitHub
 ##### Track file history (logs) in a repository
 - `git log --all --full-history -- <path_to_file>` (without <>)
