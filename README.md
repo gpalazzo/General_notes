@@ -7,9 +7,11 @@ This repository aims to summarize general notes about bash commands and other co
 - `Standard TCP SSH port: 22`
 
 #### SSH Keys
-##### Generating SSH key
+##### File's permission
+  - if you have a `{file_name}.pem` file holding your private key for a SSH, you should do `chmod 400 {file_name}.pem` in order to allow the root remote to read it.
+##### One possible way of generating SSH key
   - move to `~/.ssh/` and then `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-##### "Making" SSH visible to bash
+##### "Making" SSH visible to bash (in case you changed the default id_rsa name, if you create another bash session, i.e., close and open another bash, you will need to perform both steps that follows):
   - `ssh-agent bash`
 ##### Adding private key to identity file (it allows cloning the repository having the SSH public key)**
   - `ssh-add file_with_private_key`
