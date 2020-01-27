@@ -55,7 +55,7 @@ Note: this setup will take some time (~1,5h) to finish
 - tar xJf Python-3.6.10.tar.xz
 - cd Python-3.6.10
 - ./configure
-- make
+- sudo make -j4
 - sudo make install
 - sudo pip3 install --upgrade pip
 
