@@ -46,6 +46,19 @@ It could be generated because your environment variable `PYTHONPATH` is not visi
 ##### Track file history (logs) in a repository
 - `git log --all --full-history -- <path_to_file>` (without <>)
 
+## Raspberry Pi
+#### How to install a specific version of Python? (in this case 3.6.10)
+Credits: http://www.knight-of-pi.org/installing-python3-6-on-a-raspberry-pi/ (Obs: I don't know the owner of the link above, nor I have any relation in any instance with this content. Accessing the link and using this is by your own risk).
+Note: this setup will take some time (~1,5h) to finish
+- `sudo apt-get install python3-dev libffi-dev libssl-dev -y`
+- `wget https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz`
+- tar xJf Python-3.6.10.tar.xz
+- cd Python-3.6.10
+- ./configure
+- make
+- sudo make install
+- sudo pip3 install --upgrade pip
+
 ##### Steps to clear history of github repository
 1. move to the repository you want to perform the action
 2. `rm -rf .git`
