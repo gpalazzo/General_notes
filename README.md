@@ -73,7 +73,7 @@ Note: this setup will take some time (~1,5h) to finish
 - create a file: `touch file_name`
 - enter the file using your preferred text editor and add the content (remembering it should start with `#!/bin/bash`):
   - opening: `vi file_name`
-  - content: ```#!/bin/bash
+  - content: ```#!/bin/bash<br>
                 echo Hello, World!
              ```
 - change file's permission: `chmod 755 file_name`
