@@ -67,3 +67,14 @@ Note: this setup will take some time (~1,5h) to finish
 5. `git commit -m "commit_message"` (substitute commit_message for the message you want)
 6. `git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git` (note you would need ssh permission for this action, i.e., you need to have a public key in your ssh keys in github profile)
 7. `git push -u --force origin master`
+
+## Shell Scripting
+#### How to create a executable shell script?
+- create a file: `touch file_name`
+- enter the file using your preferred text editor and add the content (remembering it should start with `#!/bin/bash`):
+  - opening: `vi file_name`
+  - content: ```#!/bin/bash
+                echo Hello, World!
+             ```
+- change file's permission: `chmod 755 file_name`
+- to run, you only need to type the file_name in the terminal: `file_name`
